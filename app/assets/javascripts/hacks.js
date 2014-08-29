@@ -6,7 +6,7 @@
 
     $scope.onload = function (){
       alert("Hello World");
-    }
+    };
 
 
     $scope.counter = 30;
