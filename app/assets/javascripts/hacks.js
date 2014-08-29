@@ -22,7 +22,8 @@
           $scope.wrong = true;
         }
       };
-      // 
+      
+      // Timer function.
       $scope.counter = 30;
       var mytimeout = null;
       $scope.onTimeout = function(){
