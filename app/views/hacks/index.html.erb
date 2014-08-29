@@ -1,13 +1,13 @@
-<h1>Word Shuffle</h1>
 
-  <div ng-controller="AlbumCtrl">
+<h1>Word Shuffle</h1>
+  <div class="main_content" ng-controller="AlbumCtrl">
   
   <br>
   <div class="counter">
-    <button ng-click="stop()">Stop</button> 
-    <button ng-click='startTimer()'>Start</button>
+    <!-- <button ng-click="stop()">Stop</button>  -->
+    <!-- <button ng-click='startTimer()'>Start</button> -->
        {{ counter }}
-  <!-- <button ng-click='stopTimer()'>Stop</button>   -->
+    <button ng-click='stopTimer()'>Stop</button>
   </div>
 
   <div class="play_game_box">
@@ -15,7 +15,7 @@
 
     <form name="answerForm" ng-submit="submitAnswer()" novalidate>  
       <!-- The models are collecting the data -->
-      <label>Name</label>  
+      <label>Word: </label>  
       <input type="text" ng-model="answer" required ng-minlength="3"/><br> 
       <input id="hidden" type="hidden"  value="<%= @word %>"></input><br>
       <button>Submit</button>  

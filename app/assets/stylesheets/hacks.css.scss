@@ -3,27 +3,47 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 *{
   box-sizing: border-box;
-  margin: 0px;  
+  margin: 0 auto;  
   padding: 0px;
+  font-color: black;
 
 }
 
 
-body{
+body {
   padding: 40px;
-/*  background-image: url(file:///Users/doquyena/GA/WDI_LDN_7_Work/gwen_au/w9/d4/gwen_reference_work_d44/hackathon_rev00/app/assets/images/Screen%20Shot%202014-08-28%20at%2019.48.12.png);*/
-  
- /* background: url(../images/hourglass.png);*/
+  font-color: black;
+  color: black;
+  border-radius: 5px;
+  max-width: 940px;
   text-align: center;
-/*  background-image: url(http://www.endlessicons.com/wp-content/uploads/2013/04/alarm-clock-icon-614x460.png);*/
+  background: url('hourglass.png');
 }
 
+.main_content{
+  font-color: black;
+  background-color: gray;
+
+  opacity: 0.7;
+  filter: alpha(opacity=40);
+/*  width: 1100px;*/
+  color: black;
+/*  position: center;*/
+  padding: 10px;
+/*  max-width: 640px;*/
+/*  position: fixed;*/
+  top: 50%;
+  right: 50%;
+}
 .play_game_box{
+  font-color: black;
   padding: 100px;
 }
 
 .word{
+
   padding: 100px;
+  font-color: black;
 }
 
 .counter {
@@ -36,26 +56,15 @@ body{
   position: fixed;
   top: 60%;
   left: 75%;
-
-/*  padding-left: 60px;
-  padding-right: 100px;
-  padding-top: 60px;
-  padding-bottom: 60px;*/
-  /*background-image: url(http://ak8.picdn.net/shutterstock/videos/1877866/preview/stock-footage-sands-move-through-hour-glass.jpg);*/
-  background-color: gray;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-
-  max-width: 400px;
-  color: black;
-  border-radius: 5px;
-/*  text-align: center;*/
+  font-color: black;
 
 }
 
 h1 {
   font-size: 60px;
   text-align: center;
+  padding: 40px;
+  font-color: black;
 }
 
 div {
@@ -65,6 +74,7 @@ div {
 h3 {
   font-size: 50px;
   text-align: center;
+  color: black;
 }
 
 input {

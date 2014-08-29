@@ -3,8 +3,10 @@
   var app = angular.module('hackathonApp', []);
   
   app.controller('AlbumCtrl', ["$scope", "$timeout", function($scope, $timeout){
-    $scope.counter = 30;
-    var mytimeout = null;
+    $scope.counter = 45;
+    // var mytimeout = null;
+
+
     
     $scope.onTimeout = function(){
       if($scope.counter === 0){
@@ -15,13 +17,15 @@
         $scope.counter--;
         mytimeout = $timeout($scope.onTimeout,1000);
     };
+    
+    var mytimeout = $timeout($scope.onTimeout,1000);
 
     $scope.startTimer = function(){
       mytimeout = $timeout($scope.onTimeout, 1000);
     };
     $scope.stopTimer = function(){
       $scope.$broadcast('timer-stopped', $scope.counter);
-      $scope.counter = 30;
+      $scope.counter = 45;
       $timeout.cancel(mytimeout);
     };
 
