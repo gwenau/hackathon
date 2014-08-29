@@ -6,7 +6,7 @@
   <div class="counter">
     <br>
     <strong>Welcome to Word Shuffle! </strong><br>You have 30 seconds to guess the word in the box, GO!
-    <br><br><br>
+    <br><br>
 
     <div class="counter-text">
     <!-- <button ng-click="stop()">Stop</button>  -->
@@ -33,7 +33,7 @@
 
     <div class="winner" ng-show="correct">Congrats!</div>
 
-    <div class="timerOut" ng-show="wrong">No, your shit!</div>
+    <div class="timerOut" ng-show="wrong">No, your shit! <br> <div class="right_answer">The correct answer was <%= @word %></div></div>
     <br>
     <button class="button"><a href="/">New Game</a></button>
   </div>
