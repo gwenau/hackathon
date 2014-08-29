@@ -4,11 +4,11 @@
   
   app.controller('AlbumCtrl', ["$scope", "$timeout", function($scope, $timeout){
 
-    $scope.onload = function (){
-      alert("Hello World");
-    }
+    // $scope.onload = function (){
+    //   alert("Hello World");
+    // }
 
-    $scope.counter = 5;
+    $scope.counter = 30;
     // var mytimeout = null;
 
     
@@ -29,7 +29,7 @@
     };
     $scope.stopTimer = function(){
       $scope.$broadcast('timer-stopped', $scope.counter);
-      $scope.counter = 5;
+      $scope.counter = 30;
       $timeout.cancel(mytimeout);
     };
 
