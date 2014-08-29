@@ -4,30 +4,34 @@
   
   <br>
   <div class="counter">
+    <div class="counter-text">
     <!-- <button ng-click="stop()">Stop</button>  -->
     <!-- <button ng-click='startTimer()'>Start</button> -->
        {{ counter }}
-    <button ng-click='stopTimer()'>Stop</button>
+      </div>
+      <!-- <hr> -->
+    <button class="button" ng-click='stopTimer()'>Stop</button>
+    <div class="timerOut" ng-show="timeRanOut">Sorry, your time ran out, try again!</div>
   </div>
 
-  <span ></span>
+
 
   <div class="play_game_box">
     <h3 class="word"><%= @word_shuffled %></h3>
 
-    <form name="answerForm" ng-submit="submitAnswer()" novalidate>  
+    <form class="form_height"name="answerForm" ng-submit="submitAnswer()" novalidate>  
       <!-- The models are collecting the data -->
-      <label>Word: </label>  
+      <label>Answer: </label>  
       <input type="text" ng-model="answer" required ng-minlength="3"/><br> 
       <input id="hidden" type="hidden"  value="<%= @word %>"></input><br>
-      <button>Submit</button>  
+      <button class="button">Submit</button>  
     </form>
 
     <div class="winner" ng-show="correct">Congrats!</div>
 
     <div class="loser" ng-show="wrong">No, your shit!</div>
     <br>
-    <button><a href="/">New Game</a></button>
+    <button class="button"><a href="/">New Game</a></button>
   </div>
 
 </div>

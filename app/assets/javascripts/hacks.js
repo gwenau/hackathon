@@ -8,7 +8,7 @@
       alert("Hello World");
     }
 
-    $scope.counter = 45;
+    $scope.counter = 5;
     // var mytimeout = null;
 
     
@@ -29,13 +29,14 @@
     };
     $scope.stopTimer = function(){
       $scope.$broadcast('timer-stopped', $scope.counter);
-      $scope.counter = 45;
+      $scope.counter = 5;
       $timeout.cancel(mytimeout);
     };
 
       $scope.$on('timer-stopped', function(event, remaining){
       if(remaining === 0){
-        alert('Your time ran out');
+        $scope.timeRanOut = true;
+        // alert('Your time ran out');
       }
     })
 
