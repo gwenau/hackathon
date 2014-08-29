@@ -10,22 +10,23 @@
   <!-- <button ng-click='stopTimer()'>Stop</button>   -->
   </div>
 
+  <div class="play_game_box">
+    <h3 class="word"><%= @word_shuffled %></h3>
 
-  <h3><%= @word_shuffled %></h3>
+    <form name="answerForm" ng-submit="submitAnswer()" novalidate>  
+      <!-- The models are collecting the data -->
+      <label>Name</label>  
+      <input type="text" ng-model="answer" required ng-minlength="3"/><br> 
+      <input id="hidden" type="hidden"  value="<%= @word %>"></input><br>
+      <button>Submit</button>  
+    </form>
 
-  <form name="answerForm" ng-submit="submitAnswer()" novalidate>  
-    <!-- The models are collecting the data -->
-    <label>Name</label>  
-    <input type="text" ng-model="answer" required ng-minlength="3"/><br> 
-    <input id="hidden" type="hidden"  value="<%= @word %>"></input><br>
-    <button>Submit</button>  
-  </form>
+    <div class="winner" ng-show="correct">Congrats!</div>
 
-  <div class="winner" ng-show="correct">Congrats!</div>
-
-  <div class="loser" ng-show="wrong">No, your shit!</div>
-  <br>
-  <button><a href="/">New Game</a></button>
+    <div class="loser" ng-show="wrong">No, your shit!</div>
+    <br>
+    <button><a href="/">New Game</a></button>
+  </div>
 
 </div>
 

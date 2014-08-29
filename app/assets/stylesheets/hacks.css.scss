@@ -12,12 +12,19 @@
 body{
   padding: 40px;
 /*  background-image: url(file:///Users/doquyena/GA/WDI_LDN_7_Work/gwen_au/w9/d4/gwen_reference_work_d44/hackathon_rev00/app/assets/images/Screen%20Shot%202014-08-28%20at%2019.48.12.png);*/
-  background-repeat: no-repeat;
-
+  
+ /* background: url(../images/hourglass.png);*/
   text-align: center;
 /*  background-image: url(http://www.endlessicons.com/wp-content/uploads/2013/04/alarm-clock-icon-614x460.png);*/
 }
 
+.play_game_box{
+  padding: 100px;
+}
+
+.word{
+  padding: 100px;
+}
 
 .counter {
   text-align: center;
@@ -27,8 +34,8 @@ body{
   height: 200px;
   font-family: Verdana;
   position: fixed;
-  top: 50%;
-  left: 25%;
+  top: 60%;
+  left: 75%;
 
 /*  padding-left: 60px;
   padding-right: 100px;
