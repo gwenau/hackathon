@@ -3,9 +3,10 @@
   var app = angular.module('hackathonApp', []);
   
   app.controller('AlbumCtrl', ["$scope", "$timeout", function($scope, $timeout){
-    $scope.$on('$viewContentLoaded', function() {
-      alert("On load activated")
-    });
+
+    $scope.onload = function (){
+      alert("Hello World");
+    }
 
 
     $scope.counter = 30;
