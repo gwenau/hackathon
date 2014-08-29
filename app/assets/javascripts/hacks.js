@@ -3,9 +3,13 @@
   var app = angular.module('hackathonApp', []);
   
   app.controller('AlbumCtrl', ["$scope", "$timeout", function($scope, $timeout){
+
+    $scope.onload = function (){
+      alert("Hello World");
+    }
+
     $scope.counter = 45;
     // var mytimeout = null;
-
 
     
     $scope.onTimeout = function(){
