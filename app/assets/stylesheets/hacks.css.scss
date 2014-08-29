@@ -48,9 +48,13 @@ body {
 
 .word{
 
-  padding-bottom: 80px;
-  font-color: black;
-}
+  
+  border: 10px solid black;
+  padding: 20px;
+
+
+/*  background-color: white;
+*/}
 
 .counter {
   text-align: center;
@@ -59,7 +63,7 @@ body {
 /*  width: 200px;
   height: 100px;*/
   font-family: Verdana;
-  padding: 20px;
+  padding: 10px;
 /*  position: fixed;*/
 /*  top: 60%;
   left: 75%;*/
@@ -102,6 +106,7 @@ h1 {
 
 .form_height {
   font-size: 20px;
+  padding-top: 60px;
 }
 
 /*div {
