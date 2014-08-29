@@ -1,0 +1,77 @@
+// Place all the styles related to the hacks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+  box-sizing: border-box;
+  margin: 0px;  
+  padding: 0px;
+
+}
+
+
+body{
+  padding: 40px;
+/*  background-image: url(file:///Users/doquyena/GA/WDI_LDN_7_Work/gwen_au/w9/d4/gwen_reference_work_d44/hackathon_rev00/app/assets/images/Screen%20Shot%202014-08-28%20at%2019.48.12.png);*/
+  background-repeat: no-repeat;
+
+  text-align: center;
+/*  background-image: url(http://www.endlessicons.com/wp-content/uploads/2013/04/alarm-clock-icon-614x460.png);*/
+}
+
+
+.counter {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 70px;
+  width: 300px;
+  height: 200px;
+  font-family: Verdana;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+
+/*  padding-left: 60px;
+  padding-right: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;*/
+  /*background-image: url(http://ak8.picdn.net/shutterstock/videos/1877866/preview/stock-footage-sands-move-through-hour-glass.jpg);*/
+  background-color: gray;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+
+  max-width: 400px;
+  color: black;
+  border-radius: 5px;
+/*  text-align: center;*/
+
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+h3 {
+  font-size: 50px;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+aside {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
